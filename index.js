@@ -21,7 +21,11 @@ nocache('./denz.js', module => console.log(color('|TRM|'), color(`${module} Upda
 
 async function starts() {
 denz.autoReconnect = ReconnectMode.onConnectionLost
-    denz.version = [2, 2140, 12]
+    denz.version = [
+		2,
+		2230,
+		15
+	           ]
     denz.logger.level = 'warn'
     denz.browserDescription = ['Dcode Denpa','Desktop','3.0']
     await sleep(10000)
